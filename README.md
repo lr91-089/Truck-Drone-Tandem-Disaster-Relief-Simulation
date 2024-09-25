@@ -19,7 +19,7 @@ We generate 200 graphs $G=(L,E)$ with $|L|=16$ nodes, by placing the nodes rando
 We create sparse graphs since they most resemble real road networks. We keep the graphs connected to ensure feasibility: There is a road between each delivery address and the depot. 
 We start with a complete graph and gradually reduce the number of edges to $|E|=36$ by randomly deleting edges that do not disconnect the graph. 
 
-The instances 1601-1700 are used for the main experiments, while the instances 6001-6200 are used for the calibration of the hybrid policy.
+The instances 1601-1800 are used for the main experiments, while the instances 6001-6200 are used for the calibration of the hybrid policy (we generated additional 200 graphs with same procedure).
 
 ## Random seeds
 
