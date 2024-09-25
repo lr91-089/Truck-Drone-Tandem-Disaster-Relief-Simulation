@@ -5,7 +5,7 @@ cd "$(dirname "$0")"
 file_name="drone_truck_disaster_linux.out"
 
 
-for csvfile in $(dirname "$0")/paper_bash_files_experiments/*.csv;do
+for csvfile in $(dirname "$0")/experimental_bash_input_files/paper_bash_files_experiments/*.csv;do
    (
    exec < $csvfile
 
