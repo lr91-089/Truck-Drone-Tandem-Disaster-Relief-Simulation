@@ -44,6 +44,11 @@ The edges of the graph are provided in the ```<adjacency matrix>```, as well as 
 
 ## Simulation usage
 
+Important: You need a CPLEX license, to run the simulation. Please link your installation in the ```tasks.json``` and ```c_cpp_properties.json``` file by changing the installation directories to this libraries:
+```"-I/my_installation_directory/CPLEX_Studio2211/cplex/include",```
+```"-I/my_installation_directory/CPLEX_Studio2211/concert/include",```
+```"-L/my_installation_directory/CPLEX_Studio2211/cplex/lib/x86-64_linux/static_pic",```
+```"-L/my_installation_directory/CPLEX_Studio2211/concert/lib/x86-64_linux/static_pic",``` and then generate the executable ```drone_truck_disaster_linux.out```.
 To replicate the experiments of the paper, please run the three bash files. The input of the bash files is given in the folders: ```paper_bash_files_experiments```, ```paper_calibration_bash_files```, and ```paper_sichtfeld_experiments_bash```. To speed up the computation, the experiments are executed in 20 parallel threads.
 
 
