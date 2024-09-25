@@ -1,0 +1,23 @@
+{
+    "env": {
+        "myDefaultIncludePath": [
+            "${workspaceFolder}/**"
+        ]
+    },
+    "configurations": [
+        {
+            "name": "CplexLinux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/home/rocha01/CPLEX_Studio2211/cplex/include",
+                "/home/rocha01/CPLEX_Studio2211/concert/include"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c17",
+            "cppStandard": "c++20",
+            "intelliSenseMode": "linux-clang-x64"
+        }
+    ],
+    "version": 4
+}

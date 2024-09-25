@@ -1,0 +1,144 @@
+{
+    "configurations": [
+        {
+            "name": "(gdb) Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/${fileBasenameNoExtension}.out",
+            "args": [
+                "6200",               //instance
+                "1",                //iterations
+                "22",                //k arcs removed
+                "0",                //cluster damages
+                "0.333",            //customer proportion
+                "2",              //drone speed
+                "-1",           //cmax
+                "7705427590385642798",        //random seed    
+                "3",               //full info setting
+                "3",               //surveillance first setting
+                "3",                   //surveillance orienteering setting
+                "3",                //reopt setting
+                "3",               //conservative delivery setting
+                "0",                //shortcuts
+                "0",                //truck manhattan distance or euclidean
+                "test_instances",       //output prefix
+                "0.333",                //parking nodes
+                "2.4",                 //penalty
+                "0.0",                  //constant service time
+                "0.75",                 //cmax ratio
+                "0",                    //sichtgeld settings
+                "1"                 //write tours or not
+            ],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [
+                {
+                    "name": "LSAN_OPTIONS",
+                    "value": "verbosity=1:log_threads=1:print_summary=1:abort_on_error=1"
+                },
+                {
+                    "name": "ASAN_OPTIONS",
+                    "value": "detect_stack_use_after_return=1:abort_on_error=1"
+                },
+                {
+                    "name": "UBSAN_OPTIONS",
+                    "value": "print_stacktrace=1:silence_unsigned_overflow=1:abort_on_error=1"
+                },
+                {
+                    "name": "MSAN_OPTIONS",
+                    "value": "print_stacktrace=1:abort_on_error=1"
+                }
+            ],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        {
+            "name": "C/C++: g++ build and debug active file",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}.out",
+            "args": [
+                "1671",
+                "1",
+                "22",
+                "0",
+                "0.333",
+                "1.0",
+                "-1",
+                "789837258",
+                "3",
+                "3",
+                "3",
+                "3",
+                "3",
+                "0",
+                "0",
+                "test_instances",
+                "0.333",
+                "2.4",
+                "10.0",
+                "0.75",
+                "1",                    //sichtgeld settings
+                "1"
+            ],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "C/C++: g++ build active file",
+            "miDebuggerPath": "/usr/bin/gdb"
+        },
+        {
+            "name": "C/C++: gcc build and debug active file",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "C/C++: gcc build active file",
+            "miDebuggerPath": "/usr/bin/gdb"
+        }
+    ],
+    "version": "2.0.0"
+}
