@@ -1,6 +1,6 @@
 # Truck-Drone-Tandem-Disaster-Relief-Simulation
 A repository with the simulation framework and instances used for the submitted paper:
-> Otto, A., Golden, B., Lorenz, C., Luo, Y., Pesch, E. & Rocha, L. A. (2024). On delivery policies for a truck-and-drone tandem in disaster relief. IISE Transactions. Article in Press.
+> Otto, A., Golden, B., Lorenz, C., Luo, Y., Pesch, E. & Rocha, L. A. (2024). On delivery policies for a truck-and-drone tandem in disaster relief. IISE Transactions, 1–31. https://doi.org/10.1080/24725854.2024.2410353 
 
 You are kindly requested to cite this paper if these codes or instances are relevant to your research. 
 
@@ -33,8 +33,7 @@ Three further settings refer to widespread network characteristics in the TSP-D 
 
 We also investigate the influence of a slow drone ($\alpha \leq 1$), the influence of the number of damaged edges in the graph, and different fields of view for trucks and drones.
 
-For more information, please see our paper: 
-> Otto, A., Golden, B., Lorenz, C., Luo, Y., Pesch, E. & Rocha, L. A. (2024). On delivery policies for a truck-and-drone tandem in disaster relief. IISE Transactions. Article in Press.
+For more information, please see our [paper](https://doi.org/10.1080/24725854.2024.2410353).
 
 ## Instance usage
 Comments within an instance file start with ```<``` and end with ```>``` and must be ignored by a parser.
